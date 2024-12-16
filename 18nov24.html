@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let balance = 100000;
+    let rate = 18.5;
+    let period = 20;
+    for (let i = 0; i < period; i++) {
+        balance += ((balance *= rate)/100);
+        document.write("<h4>Количество денег на счету: Годы " + (i + 1) + ": " +  balance + "</h3><br>");
+    
+    }
+</script>
+</html>
