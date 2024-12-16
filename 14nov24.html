@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id="rofls"></div>
+</body>
+<script>
+    let rofls = 1;
+    for (let i = 0; i < 64; i++) {
+        rofls *= 2;
+        document.write("<h4>Число зёрен: Операция " + (i + 1) + ": " + rofls + "</h4><br>");
+    }
+let rofls2 = rofls*0.000065
+document.write("<h3>Конечное число зёрен в тоннах " + ": " + rofls2 + "</h3><br>");
+let rofls3 = rofls*0.25
+document.write("<h3>Цена в рублях: " + ": " + rofls + "</h3><br>");
+</script>
+</html>
